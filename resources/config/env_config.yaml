@@ -1,0 +1,9 @@
+remote_url:        http://127.0.0.1:4723/wd/hub
+platformVersion:   '17.2'
+platformName:      ios
+deviceName:        iPhone 15 Pro
+automationName:    XCUITest
+app:               /Users/marcelomenon/Library/Developer/Xcode/DerivedData/ToDo_App-diuwvbdkycnyqifipvlovbbsrwlo/Build/Products/Debug-iphonesimulator/ToDo App.app
+newCommandTimeout: 60000
+launchTimeout:     48000
+noReset:           false

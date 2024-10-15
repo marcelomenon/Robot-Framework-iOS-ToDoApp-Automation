@@ -14,7 +14,7 @@ This automation mobile testing project is developed using Robot Framework to tes
 The iOS ToDoApp is available at https://github.com/marcelomenon/todo-app
 
 ## How to run the automation
-Run the command <appium --base-path /wd/hub> to start the Appium.
+Run the command < appium --base-path /wd/hub > to start the Appium.
 To run the test cases just use the "Run" in the VSCode.
 
 ## Test Cases

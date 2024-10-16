@@ -20,9 +20,20 @@ To run the test cases just use the "Run" in the VSCode.
 
 ## Test Cases
 - **Test Case 01:** Verify the home user interface.
+
+<img width="733" alt="Screenshot 2024-10-15 at 19 10 23" src="https://github.com/user-attachments/assets/2453b8bc-88ae-4f09-a61e-0cd3107d87e5">
+
 - **Test Case 02:** Add the items.
+
+<img width="730" alt="Screenshot 2024-10-15 at 19 12 14" src="https://github.com/user-attachments/assets/f36c3eb9-2aeb-4f57-835d-87b28f547a20">
+
 - **Test Case 03:** Checkmark the items.
+
+<img width="734" alt="Screenshot 2024-10-15 at 19 13 02" src="https://github.com/user-attachments/assets/62214660-ca25-4418-aadd-594c4bec2f28">
+
 - **Test Case 04:** Delete the items.
+
+<img width="727" alt="Screenshot 2024-10-15 at 19 13 56" src="https://github.com/user-attachments/assets/372fccfb-c4cb-4dfb-8b71-615eee542b0f">
 
 ## Setup and Installation
 
@@ -58,10 +69,8 @@ To run the test cases just use the "Run" in the VSCode.
 
 **Setup Webdriver Agent for iOS in the Xcode**
 
-- find . -name "appium-webdriveragent"
-- find: ./.Trash: Operation not permitted
-- ./.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent
-- open ./.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent
+- Run the command:
+- `open ./.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent`
 
 - Open the file WebDriverAgent.xcodeproj
 - In the Xcode select WebDriverAgentRunner and the simulator (ex: iPhone 15 Pro)
@@ -72,8 +81,8 @@ To run the test cases just use the "Run" in the VSCode.
 - Change the Bundle Identifier for the IntegrationApp to com.facebooks.IntegrationApps
 
 - Important: If the WebDriverAgent.xcodeproj is locked we need to change the folder permissions, it happened because the Appium was installed using the command sudo and the Xcode do not has permissions to access the Appium folder.
-- Try first open ./.appium/node_modules/appium-xcuitest-driver/node_modules and double right click on the folder appium-webdriveragent, click on Get Info and at the bottom change to “Apply to enclosed items”.
-- If it is still locked try open ./.appium and double right click on the folder node_modules, click on Get Info and at the bottom change to “Apply to enclosed items”.
+- Run the command `open ./.appium/node_modules/appium-xcuitest-driver/node_modules` and double right click on the folder appium-webdriveragent, click on Get Info and at the bottom change to “Apply to enclosed items”.
+- If it is still locked run the command `open ./.appium` and double right click on the folder node_modules, click on Get Info and at the bottom change to “Apply to enclosed items”.
 
 - Run the build for the WebDriverAgentRunner - Build Succeded
 - Run the build for the WebDriverAgentLib - Build Succeded
@@ -98,7 +107,7 @@ To run the test cases just use the "Run" in the VSCode.
 - Unresolved library: AppiumLibrary. Error generating libspec: Importing library 'AppiumLibrary' failed: ModuleNotFoundError: No module named 'appium.webdriver.common.touch_action'. Consider adding the needed paths to the "robot.pythonpath" setting and calling the "Robot Framework: Clear caches and restart" action.
 - https://forum.robotframework.org/t/unable-to-import-robotframework-appiumlibrary-even-after-successful-installation-in-pycharm/6990/5
 
-- It says AppiumLibrary (rf bindings) cannot import TouchAction from appium itself. So, next we need to check what Appium-Python-Client is used, pip3 list displays version 4.0.0.
+- It says AppiumLibrary (rf bindings) cannot import TouchAction from appium itself. So, next we need to check which Appium-Python-Client is used, pip3 list displays version 4.0.0.
 
 - `pip3 list`
 ```
@@ -212,7 +221,6 @@ wxPython                       4.2.1
 - Typically you can install it by running `pip install pyyaml`.
 - `pip3 install pyyaml`
 - Successfully installed pyyaml-6.0.1
-- https://help.perfecto.io/perfecto-help/content/kb/automation/xpath_2_0_updates___workarounds.htm
 
 **Set Python virtual environment**
 
@@ -349,4 +357,3 @@ wsproto                        1.2.0
 
 - https://stackoverflow.com/questions/71931370/robotframework-some-libraries-are-not-imported/72324894#72324894
 
-# Robot Framework iOS ToDoApp Automation

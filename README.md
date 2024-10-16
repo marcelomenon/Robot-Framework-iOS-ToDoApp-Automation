@@ -292,7 +292,11 @@ wsproto                        1.2.0
 
 - A new env folder is created and in the VSCode type Shift Command P and in the search type Python Select Interpreter
 
-- Select the new env 
+<img width="1037" alt="Screenshot 2024-10-16 at 18 05 18" src="https://github.com/user-attachments/assets/f5c0ad97-f413-4d3c-b7aa-511ea8d26a40">
+
+<img width="1362" alt="Screenshot 2024-10-16 at 18 08 17" src="https://github.com/user-attachments/assets/4e35b765-a81b-46f3-954f-882442619736">
+
+<img width="1367" alt="Screenshot 2024-10-16 at 18 08 48" src="https://github.com/user-attachments/assets/50426e15-b8ac-44d6-a2b7-89b8b6838c8c">
 
 - In the VSCode terminal in the folder project type:
 - `source env/bin/activate`
